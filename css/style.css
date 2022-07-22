@@ -1,0 +1,508 @@
+/*____________________________________________
+_____________||Google Fonts||___________________*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+/*___________________________________________
+________________||Default Style ||___________*/
+:root{
+    --black: #161616;
+    --red: #DD0000;
+    --white: #fff;
+    ---gray: #B9B9B9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.btn{
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--red);
+    padding: 10px 25px;
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .4s ease-in-out;
+}
+
+/*___________________________________________
+________________|| Home Start||_____________ */
+
+.home_area {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    padding: 40px 40px 0 40px;
+    gap: 165px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.button_home {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.button_home .btn:before {
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 300px;
+    top: -48px;
+    left: 0;
+    border-radius: 16px;
+    background: #e66c88;
+    transform: translate(-65%, 3%) rotate(64deg);
+    z-index: -1;
+    transition: .4s ease-in-out;
+}
+
+.button_home:hover .btn:before{
+    transform: translateX(-2px)
+}
+
+.home_img img {
+    width: 437px;
+    margin-bottom: -7px;
+}
+
+.home_content h2 {
+    font-size: 45px;
+    color: var(--white);
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.home_content p {
+    font-size: 16px;
+    color: var(--white);
+    margin-bottom: 25px;
+}
+
+
+
+/*___________________________________________
+________________|| Home End||______________ */
+/*____________________________________________
+________________|| Blog Start ||______________ */
+
+section.blog{
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.blog_area {
+    display: flex;
+    gap: 15px;
+}
+
+.right_blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.blogs_item {
+    width: 430px;
+}
+
+.blog_button {
+    background: var(--black);
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+
+.blog_button button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    border-radius: 8px;
+    border: 1px solid var(---white);
+    background: var(--white);
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--black);
+}
+
+.blog_button button a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+article.blog_single {
+    border: 1px solid var(---gray);
+    border-radius: 12px;
+}
+
+
+.blog_img img {
+    width: 100%;
+    height: 175px;
+}
+
+.blog_info {
+    padding: 14px;
+}
+
+.blog_info button {
+    padding: 4px 16px;
+    border: 1px solid var(--black);
+    background: var(--white);
+    border-radius: 4px;
+    text-transform: capitalize;
+}
+
+.blog_button button.active{
+    background: var(--red);
+    color: var(--white);
+}
+
+.blog_button button.active a{
+    color: var(--white);
+}
+
+.blog_info h3 {
+    font-size: 18px;
+    color: var(--black);
+    padding: 10px 0;
+}
+
+.blog_info span {
+    margin-right: 45px;
+    color: var(---gray);
+    font-size: 18px;
+}
+
+.blog_info span i {
+    margin-right: 14px;
+}
+
+.button.blog {
+    text-align: center;
+    margin-top: 45px;
+    display: none;
+}
+
+
+
+/*___________________________________________
+________________|| Blog End ||______________ */
+/*_____________________________________________
+________________|| Footer Start ||_____________ */
+
+footer {
+    background: var(--black);
+    padding: 70px;
+}
+
+.footer_item ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_content {
+    text-align: center;
+}
+
+.footer_item ul li {
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: var(--white);
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.footer_content h2 {
+    font-size: 30px;
+    color: var(--white);
+    margin-bottom: 35px;
+}
+
+.border {
+    border-bottom: 1px solid var(---gray);
+}
+
+.footer_item {
+    margin-top: 36px;
+    margin-bottom: 30px;
+}
+
+.footer_icon span a {
+    font-size: 27px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: var(--white);
+}
+
+/*_____________________________________________
+________________|| Footer End ||_____________ */
+
+/*_______________________________________________
+_____________|| @Media Queries Start ||__________ */
+
+/*_______________________________________________
+________________|| Mobile Device ||_____________ */
+
+@media screen and (max-width: 576px){
+    /* Home Meadia Queries */
+    .container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .home {
+        flex-direction: column;
+    }
+
+    .home_content {
+        text-align: center;
+    }
+
+    /* blog Meadia Queries */
+
+    .blog_area {
+        display: block;
+        gap: 15px;
+    }
+
+    .blogs_item {
+        width: inherit;
+    }
+
+    .blog_button {
+        background: inherit;
+        text-align: center;
+    }
+
+    .blog_button button {
+        width: 80%;
+        border: 1px solid var(---gray);
+    }
+
+    .right_blog {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 14px;
+    }
+    .blog_img img {
+        width: 100%;
+        height: 270px;
+    }
+
+    /* Footer Media Queries */
+
+    .footer_item ul {
+        display: grid;
+        gap: 24px;
+    }
+}
+
+/*_______________________________________________
+________________|| laptop Device ||_____________ */
+
+@media screen and (min-width: 577px) and (max-width: 768px){
+    
+    /* Home Meadia Queries */
+    .home {
+        gap: 14px;
+    }
+
+    .home_content {
+        padding-bottom: 40px;
+    }
+
+    .home_content h2 {
+        font-size: 32px;
+    }
+
+    .home_content p {
+        font-size: 13px;
+    }
+    
+    .home_img img {
+        width: auto;
+        margin-bottom: -10px;
+    }
+
+    /* blog Meadia Queries */
+
+    .blog_area {
+        display: grid;
+        gap: 20px;
+    }
+
+    .blogs_item {
+        width: auto;
+    }
+    
+    .blog_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .blog_button {
+        background: inherit;
+    }
+
+    .blog_button button {
+        border: 1px solid var(---gray);
+    }
+
+    .button.blog {
+        text-align: center;
+        margin-top: 45px;
+        display: block;
+    }
+
+    .right_blog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    article.blog_single:last-child {
+        display: none;
+    }
+    article.group_single:last-child {
+        display: none;
+    }
+    
+    /* Footer Media Queries */
+    .footer_item ul li {
+        line-height: 40px;
+    }
+    
+}
+
+/*_______________________________________________
+_____________|| @Media Queries End ||__________ */
+
+/*==============================================
+________________|| Match.Html ||_______________
+===============================================*/
+/*________________________________________________
+________________|| Match Blog Start ||____________*/
+
+.match_item {
+    padding: 28px;
+    border: 1px solid var(---gray);
+    border-radius: 10px;
+}
+
+.match_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+
+.match_img img {
+    width: 93px;
+    height: auto;
+}
+
+.match_img span {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.match_info {
+    text-align: center;
+}
+
+.match_info h2 {
+    font-size: 21px;
+    padding-top: 30px;
+}
+
+.match_info p {
+    padding-top: 12px;
+}
+/*________________________________________________
+________________|| Match Blog End||____________*/
+
+/*==============================================
+________________|| Group.Html ||_______________
+===============================================*/
+
+/*________________________________________________
+________________|| Group Blog Start ||____________*/
+
+.group_blog {
+    gap: 18px;
+}
+
+.group_item{
+    cursor: pointer;
+}
+
+.group_area {
+    gap: 35px;
+}
+
+.group_item .group_img img {
+    width: 256px;
+    height: auto;
+    border-radius: 15px;
+    transition: all .3s ease-in-out;
+}
+
+.group_img {
+    overflow: hidden;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.group_item:hover .group_img img{
+    transform: scale(1.2);
+    border-radius: 15px;
+}
+
+.group_info {
+    padding: 10px;
+    text-align: center;
+}
+
+.group_info h2 {
+    font-size: 22px;
+    color: var(--black);
+}
+/*________________________________________________
+________________|| Group Blog End ||____________*/
+
+
+
+
+
